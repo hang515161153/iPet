@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url("../images/login_images/bg1.jpg");
+    background-size: cover;
+}
+
+/*********************************首页head**********************************/
+.login-head {
+    width: 100%;
+    height: 70px;
+    background: #48AAB9;
+}
+
+.wareName {
+    display: block;
+    width: 250px;
+    height: 70px;
+    background: url("../images/login_images/warename.png");
+    margin-left: 20px;
+    float: left;
+}
+
+.login-head .login-logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+    float: left;
+}
+
+/*********************************登录注册界面**********************************/
+.login-content {
+    width: 350px;
+    height: 400px;
+    float: right;
+    margin: 90px 180px 0 0;
+    border-radius: 5px;
+}
+
+.login-content .user-login-list {
+    width: 100%;
+    height: 45px;
+    background: #B7D1D6;
+    border-radius: 5px;
+}
+
+.login-content .user-login-list li {
+    list-style-type: none;
+    width: 120px;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #7C7C7C;
+}
+
+.login-content .user-login-list .user-login {
+    background: #F3F7F8;
+}
+
+.login-content .user-login-ul {
+    width: 100%;
+    height: 355px;
+    background: url("../images/login_images/login_bg.jpg");
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.login-content .user-login-ul li {
+    width: 100%;
+    height: 355px;
+    display: none;
+
+}
+
+.login-content .user-login-ul .user-login-li {
+    display: block;
+}
+
+/*********************************用户登录**********************************/
+#user-login-li span {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: 35px auto;
+}
+
+#user-login-li .remeber_password {
+    width: 80%;
+    height: 30px;
+    margin: -25px auto;
+}
+
+#user-login-li .remeber_password .remeber_password_span {
+    height: 30px;
+    margin: 0 25px 0 0;
+    line-height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    width: 150px;
+    float: right;
+    text-align: right;
+}
+
+#user-login-li .remeber_password .remeber_password_span input {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+#user-login-li span img {
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+#user-login-li span input {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    margin: 9px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#user-login-li .login_btn_span {
+    margin-top: 50px;
+}
+
+.login_btn {
+    width: 230px;
+    height: 35px;
+    margin: 5px 0 0 24px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    font-family: 幼圆;
+    background: #B7D1D6;
+    cursor: pointer;
+}
+
+.login_btn:hover {
+    background: #6FA0AA;
+    color: #fff;
+}
+
+/*********************************用户注册**********************************/
+.user-login-ul #user-logup-li span {
+    display: block;
+    width: 290px;
+    height: 50px;
+    margin: 15px auto;
+}
+
+.user-login-ul #user-logup-li span input {
+    float: left;
+    width: 190px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.user-login-ul #user-logup-li span img {
+    width: 31px;
+    height: 32px;
+    margin-top: 8px;
+    border: 1px solid #A9A9A9;
+    float: left;
+}
+
+.user-login-ul #user-logup-li span .match_result {
+    width: 26px;
+    height: 26px;
+    border: 0 solid #000;
+    margin: 12px 0 0 10px;
+}
+
+.user-login-ul #user-logup-li span .register_btn {
+    width: 230px;
+    height: 35px;
+    font-size: 16px;
+    font-family: 幼圆;
+    margin-left: 20px;
+    cursor: pointer;
+    background: #B7D1D6;
+    outline: none;
+    border-radius: 5px;
+}
+
+.user-login-ul #user-logup-li span .register_btn:hover {
+    background: #6FA0AA;
+    color: #fff;
+
+}
+
+/*body {*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*}*/
+/******************首页的head样式************************/
+.head {
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid black;
+}
+
+.headLeft {
+    width: 400px;
+    height: 90px;
+    float: left;
+    margin-left: 20px;
+}
+
+.headLeft .logo {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-top: 10px;
+    float: left;
+}
+
+.headLeft .logoName {
+    width: 250px;
+    height: 90px;
+    display: block;
+    float: left;
+    line-height: 90px;
+    font-size: 32px;
+    margin-left: 25px;
+    font-weight: bold;
+    color: #8a6d3b;
+    font-family: 幼园;
+}
+
+.headRight {
+    width: 120px;
+    height: 90px;
+    float: right;
+}
+
+.headRight .userImage {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 27px 0 0 10px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #9da0a4;
+    cursor: pointer;
+}
+
+.headRight .userImage img {
+    width: 36px;
+    height: 36px;
+    margin: 1px 0 0 1px;
+    border-radius: 50%;
+}
+
+.headRight .logIn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 25px 0 0 20px;
+    float: left;
+    font-size: 17px;
+    font-family: 幼园;
+    cursor: pointer;
+}
+.headRight .logIn:hover {
+    color: #2aabd2;
+}
+
+/*.headRight .logUp {*/
+/*display: block;*/
+/*width: 40px;*/
+/*height: 40px;*/
+/*margin: 25px 0 0 10px;*/
+/*float: left;*/
+/*}*/
+
+/******************首页的content样式************************/
+
+
+
+
+
+/******************首页的foot样式************************/
+.footer{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainer {
+    /*width: 980px;*/
+    /*width: 1170px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.doctorList {
+    width: 70%;
+}
+
+.scrol {
+    height: 620px;
+    overflow: auto;
+}
+
+.thumbnail {
+    margin-bottom: 8px;
+    padding: 2px;
+}
+
+.doctor {
+    margin-bottom: 30px;
+    margin-right: 27px;
+}
