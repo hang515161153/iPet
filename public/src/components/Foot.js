@@ -7,6 +7,7 @@ class Foot extends Component {
   render() {
     return (
         <div className="footer">
+
           Copyright © 2016 iPet.com All Rights Reserved
         </div>
     );

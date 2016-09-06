@@ -1,13 +1,13 @@
 import request from 'superagent';
 
-const doctorRequestMiddleware = store=> next=> action=> {
+const doctorRequestMiddleware = store=> next=> action=> {  // eslint-disable-line no-unused-vars
 
   switch (action.type) {
-  case 'INIT':
-    request.get('/doctors')
+  case 'DOCTORS_INIT':
+    request.get('/api/doctors')
         .end((err, res)=> {
           next({
-            type: 'DOCTORS_LOADED',
+            type: 'DOCTORS_LOAD',
             data: res.body
           });
         });

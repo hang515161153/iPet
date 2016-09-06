@@ -11,40 +11,13 @@ router.get('/', (req, res)=> {
 
 router.get('/:id', (req, res)=> {
   Doctor.findOne({
-    id: req.params.id
+    _id: req.params.id
   }, (err, data)=> {
-    res.send(data);
-  });
-});
-
-router.put('/:id', (req, res)=> {
-  Doctor.update({
-    id: req.params.id
-  }, req.body, (err, data)=> {
-    res.send({
-      error: err,
-      data
-    });
-  });
-});
-
-router.post('/', (req, res, next)=> {
-  new Doctor({
-    name: req.body.name
-  }).save((err, todo) => {
-    if(err) {
-      return next(err);
+    if (data) {
+      res.send(data);
     } else {
-      res.send(todo);
+      res.sendStatus(404);
     }
-  });
-});
-
-router.delete('/:id', (req, res)=> {
-  Doctor.findByIdAndRemove(req.params.id, (err)=> {
-    res.send({
-      error: err
-    });
   });
 });
 

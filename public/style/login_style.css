@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
 }
+
 body {
-    background: url("../images/login_images/bg1.jpg");
+    background: url("../images/login_images/bg1.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -48,14 +49,15 @@ body {
 
 .login-content .user-login-list li {
     list-style-type: none;
-    width: 120px;
+    width:50%;
     height: 45px;
     float: left;
     line-height: 45px;
     font-size: 17px;
     text-align: center;
     cursor: pointer;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     font-weight: bold;
     color: #7C7C7C;
 }
@@ -102,7 +104,6 @@ body {
     margin: 0 25px 0 0;
     line-height: 30px;
     font-size: 15px;
-    line-height: 30px;
     width: 150px;
     float: right;
     text-align: right;
@@ -139,7 +140,7 @@ body {
 .login_btn {
     width: 230px;
     height: 35px;
-    margin: 5px 0 0 24px;
+    margin: 20px 0 0 24px;
     border-radius: 5px;
     outline: none;
     font-size: 18px;
@@ -152,11 +153,70 @@ body {
     background: #6FA0AA;
     color: #fff;
 }
-
+/*******************************切换不同用户登录页面按钮**************************/
+.switch{
+    float: right;
+    margin-right: 70px;
+    margin-top: -30px;
+}
+.mui-switch {
+    width: 70px;
+    height: 29px;
+    position: relative;
+    border: 1px solid #dfdfdf;
+    background:url("/images/login_images/user.jpg");
+    background-size: cover;
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    border-radius: 20px;
+    background-clip: content-box;
+    display: inline-block;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+    cursor:pointer;
+}
+.mui-switch:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
+.mui-switch:checked {
+    border-color: #fff;
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #fff; }
+.mui-switch:checked:before {
+    left: 42px; }
+.mui-switch.mui-switch-animbg {
+    transition: background-color ease 0.4s; }
+.mui-switch.mui-switch-animbg:before {
+    transition: left 0.3s; }
+.mui-switch.mui-switch-animbg:checked {
+    box-shadow: #000 0 0 0 0 inset;
+    background:url("/images/login_images/doctor.jpg");
+    background-size: cover;
+    transition: border-color 0.4s, background-color ease 0.4s; }
+.mui-switch.mui-switch-animbg:checked:before {
+    transition: left 0.3s; }
+.mui-switch.mui-switch-anim {
+    transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s; }
+.mui-switch.mui-switch-anim:before {
+    transition: left 0.3s; }
+.mui-switch.mui-switch-anim:checked {
+    box-shadow: #64bd63 0 0 0 16px inset;
+    background-color: #64bd63;
+    transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s; }
+.mui-switch.mui-switch-anim:checked:before {
+    transition: left 0.3s;
+}
 /*********************************用户注册**********************************/
 .user-login-ul #user-logup-li span {
     display: block;
-    width: 290px;
+    width: 300px;
     height: 50px;
     margin: 15px auto;
 }
@@ -201,151 +261,4 @@ body {
     background: #6FA0AA;
     color: #fff;
 
-}
-
-/*body {*/
-/*margin: 0;*/
-/*padding: 0;*/
-/*}*/
-/******************首页的head样式************************/
-.head {
-    width: 100%;
-    height: 90px;
-    border-bottom: 1px solid black;
-}
-
-.headLeft {
-    width: 400px;
-    height: 90px;
-    float: left;
-    margin-left: 20px;
-}
-
-.headLeft .logo {
-    width: 70px;
-    height: 70px;
-    display: block;
-    margin-top: 10px;
-    float: left;
-}
-
-.headLeft .logoName {
-    width: 250px;
-    height: 90px;
-    display: block;
-    float: left;
-    line-height: 90px;
-    font-size: 32px;
-    margin-left: 25px;
-    font-weight: bold;
-    color: #8a6d3b;
-    font-family: 幼园;
-}
-
-.headRight {
-    width: 120px;
-    height: 90px;
-    float: right;
-}
-
-.headRight .userImage {
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: 27px 0 0 10px;
-    float: left;
-    border-radius: 50%;
-    border: 1px solid #9da0a4;
-    cursor: pointer;
-}
-
-.headRight .userImage img {
-    width: 36px;
-    height: 36px;
-    margin: 1px 0 0 1px;
-    border-radius: 50%;
-}
-
-.headRight .logIn {
-    display: block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin: 25px 0 0 20px;
-    float: left;
-    font-size: 17px;
-    font-family: 幼园;
-    cursor: pointer;
-}
-.headRight .logIn:hover {
-    color: #2aabd2;
-}
-
-/*.headRight .logUp {*/
-/*display: block;*/
-/*width: 40px;*/
-/*height: 40px;*/
-/*margin: 25px 0 0 10px;*/
-/*float: left;*/
-/*}*/
-
-/******************首页的content样式************************/
-
-
-
-
-
-/******************首页的foot样式************************/
-.footer{
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mainer {
-    /*width: 980px;*/
-    /*width: 1170px;*/
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-}
-
-.doctorList {
-    width: 70%;
-}
-
-.scrol {
-    height: 620px;
-    overflow: auto;
-}
-
-.thumbnail {
-    margin-bottom: 8px;
-    padding: 2px;
-}
-
-.doctor {
-    margin-bottom: 30px;
-    margin-right: 27px;
 }
